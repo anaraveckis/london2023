@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London 2023</title>
+    <link rel="shortcut icon" href="./img/underground-favicon.png">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-og" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="navbar-img" src="./img/london-2023-logo.png"></a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sections
+                            </a>
+                            <ul class="dropdown-menu navbar-og">
+                                <li><a class="dropdown-item" href="./pages/history.html">History</a></li>
+                                <li><a class="dropdown-item" href="./pages/outings.html">Outings</a></li>
+                                <li><a class="dropdown-item" href="./pages/shopping.html">Shopping</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/itinerary.html">Itinerary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formulario-contacto">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>LONDON 2023</h1>
+        </section>
+        <section class="counter">
+            <iframe width="599" height="205" src="https://w2.countingdownto.com/4934851" frameborder="0"></iframe>
+        </section>
+        <section class="previews">
+            <div class="preview-card">
+                <img src="./img/previews-history.jpg" alt="History">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="./pages/history.html" class="button">History</a>
+            </div>
+            <div class="preview-card">
+                <img src="./img/previews-outings.jpg" alt="Outings">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea corrupti veniam veritatis sapiente
+                    dolores ad animi, sunt fuga debitis modi.</p>
+                <a href="./pages/outings.html" class="button">Outings</a>
+            </div>
+            <div class="preview-card">
+                <img src="./img/previews-shopping.jpg" alt="Shopping">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="./pages/shopping.html" class="button">Shopping</a>
+            </div>
+        </section>
+        <section class="planning">
+            <div>
+                <h2>Planning</h2>
+            </div>
+            <div class="calendar">
+                <img src="./img/calendar-planning.png" alt="Planning">
+            </div>
+            <div>
+                <a href="./pages/itinerary.html" class="button">Itinerary</a>
+            </div>
+        </section>
+        <section>
+            <h2>From Past Trips</h2>
+            <div class="grid-galeria">
+                <div class="galeria-item">
+                    <img src="./img/gallery-01.jpg" alt="Galeria">
+                    <h3>Covent Garden</h3>
+                </div>
+                <div class="galeria-item">
+                    <img src="./img/gallery-02.jpg" alt="Galeria">
+                    <h3>Westminster</h3>
+                </div>
+                <div class="galeria-item galeria-03">
+                    <img src="./img/gallery-03.jpg" alt="Galeria">
+                    <h3>Noel Coward Theatre</h3>
+                </div>
+                <div class="galeria-item">
+                    <img src="./img/gallery-04.jpg" alt="Galeria">
+                    <h3>Hyde Park</h3>
+                </div>
+                <div class="galeria-item">
+                    <img src="./img/gallery-06.jpg" alt="Galeria">
+                    <h3>Imperial War Museum</h3>
+                </div>
+                <div class="galeria-item galeria-05">
+                    <img src="./img/gallery-05.jpg" alt="Galeria">
+                    <h3>Camden</h3>
+                </div>
+                <div class="galeria-item">
+                    <img src="./img/gallery-07.jpg" alt="Galeria">
+                    <h3>Trafalgar Square</h3>
+                </div>
+                <div class="galeria-item">
+                    <img src="./img/gallery-08.jpg" alt="Galeria">
+                    <h3>Full English Breakfast</h3>
+                </div>
+                <div class="galeria-item">
+                    <img src="./img/gallery-10.jpg" alt="Galeria">
+                    <h3>British Museum</h3>
+                </div>
+                <div class="galeria-item galeria-10">
+                    <img src="./img/gallery-09.jpg" alt="Galeria">
+                    <h3>Primrose Hill</h3>
+                </div>
+            </div>
+        </section>
+        <section id="formulario-contacto" class="container-fluid">
+            <h2>Contact</h2>
+            <form action="" class="formulario row">
+                <div class="mb-3 col-6">
+                    <label for="formControlInput" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="formControlInput" placeholder="name@example.com">
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="formControlInput" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="formControlInput" placeholder="Jessica">
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="formControlInput" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="formControlInput" placeholder="Fletcher">
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="formControlInput" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="formControlInput" placeholder="+555-555-5555">
+                </div>
+                <div class="col-6 mb-3">
+                    <label for="formControlInput" class="form-label">Gender</label>
+                    <div class="d-flex align-items-center bd-highlight row">
+                        <div class="form-check form-check-inline col-3">
+                            <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioDefault">
+                            <label class="form-check-label" for="inlineRadioDefault">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline col-3">
+                            <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioChecked"
+                                checked="">
+                            <label class="form-check-label col-3" for="inlineRadioChecked">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline col-3">
+                            <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioDefault">
+                            <label class="form-check-label" for="inlineRadioDefault">Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field-form col-6 mb-3">
+                    <label for="country">Country:</label>
+                    <div class="form-multilabel">
+                        <select class="form-select" aria-label="Medium select">
+                            <option selected="">Choose your Country</option>
+                            <option value="1">Argentina</option>
+                            <option value="2">United Kingdom</option>
+                            <option value="3">Scotland</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6 mb-3">
+                    <label for="floatingTextarea">Comments:</label>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <button type="button" class="btn btn-secondary col-4">Secondary</button>
+                    <button type="button" class="btn btn-success col-4">Success</button>
+                </div>
+            </form>
+        </section>
+        <!-- <section id="formulario-contacto">
+            <h2>Contact</h2>
+            <form action="" class="formulario">
+                <div class="field-form">
+                    <label for="nombre">Name:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="field-form">
+                    <label for="apellido">Last Name:</label>
+                    <input type="text" id="apellido" name="apellido">
+                </div>
+                <div class="field-form">
+                    <label for="numero-de-telefono">Phone:</label>
+                    <input type="tel" id="numero-de-telefono" name="numero-de-telefono">
+                </div>
+                <div class="field-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="field-form">
+                    <label for="gender">Gender:</label>
+                    <div class="form-multilabel">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other">
+                    </div>
+                </div>
+                <div class="field-form">
+                    <label for="country">Country:</label>
+                    <div class="form-multilabel">
+                        <select name="country" id="country">
+                            <option value="argentina">Argentina</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field-form">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10">Enter your comments here!</textarea>
+                </div>
+                <div class="field-form">
+                    <input type="submit" name="submit" id="Submit">
+                    <input type="reset" name="reset" id="Reset">
+                </div>
+            </form>
+        </section> -->
+    </main>
+    <footer>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.094069102543!2d-0.1323393!3d51.5219571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2ef62e1337%3A0x5d00b77e5ca5425d!2sRegency%20House%20Hotel!5e0!3m2!1sen!2sar!4v1692831071988!5m2!1sen!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <p>© Pinnuliverse - All Rights Reserved</p>
+            <a href="https://www.facebook.com/Regencyhousehotel" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/regencyhouselondon/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtu.be/EfK-WX2pa8c?si=JfFM6MXgvld1Mwbv" target="_blank"><i class="bi bi-youtube"></i></a>
+        </div>
+        <div class="message-icon">
+            <a href="https://wa.me/+531154914850" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
