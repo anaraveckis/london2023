@@ -296,29 +296,11 @@ main section h2 {
 
 /* Formulario de Contacto */
 
-/* #formulario-contacto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-} */
-
 .formulario {
     background-color: #F7F4F3;
     padding: 10px 70px 10px 70px;
     color: #003049;
 }
-
-/* .field-form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2px;
-    width: 350px;
-    font-size: 18px;
-    font-weight: 500;
-} */
 
 /*!--------------MAIN DE LAS OTRAS PAGINAS--------------*/
 
