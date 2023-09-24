@@ -123,6 +123,7 @@ main section h2 {
     background-attachment: fixed;
     height: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -212,7 +213,12 @@ main section h2 {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: rgb(51, 53, 53);
+    background-color: #f7f4f35f;
+    padding: 10px;
+}
+
+.counter-small {
+    display: none;
 }
 
 /* Section Welcome - Mensaje de Bienvenida al sitio */
@@ -681,6 +687,14 @@ footer div i {
 
     .counter {
         display: none;
+    }
+
+    .counter-small {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: #f7f4f35f;
+        padding: 10px;
     }
 
     .button {
