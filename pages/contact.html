@@ -67,21 +67,21 @@
                     <label for="formControlInput" class="form-label">Phone Number</label>
                     <input type="tel" class="form-control" id="formControlInput" placeholder="+555-555-5555">
                 </div>
-                <div class="col-lg-6 col-sm-12 mb-3">
+                <div class="col-lg-6 col-12 mb-3">
                     <label for="formControlInput" class="form-label">Gender</label>
-                    <div class="d-flex align-items-lg-center justify-content-lg-evenly bd-highlight row">
-                        <div class="form-check form-check-inline col-lg-3 col-sm-6 mb-3">
+                    <div class="d-flex justify-content-evenly bd-highlight row flex-wrap">
+                        <div class="form-check form-check-inline col-md-3 mb-3">
                             <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioDefault">
-                            <label class="form-check-label" for="inlineRadioDefault">Male</label>
+                            <label class="form-check-label mx-2" for="inlineRadioDefault">Male</label>
                         </div>
-                        <div class="form-check form-check-inline col-lg-3 col-sm-6 mb-3">
+                        <div class="form-check form-check-inline col-md-3 mb-3">
                             <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioChecked"
                                 checked="">
-                            <label class="form-check-label" for="inlineRadioChecked">Female</label>
+                            <label class="form-check-label mx-2" for="inlineRadioChecked">Female</label>
                         </div>
-                        <div class="form-check form-check-inline col-lg-3 col-sm-6 mb-3">
+                        <div class="form-check form-check-inline col-md-3 mb-3">
                             <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioDefault">
-                            <label class="form-check-label" for="inlineRadioDefault">Other</label>
+                            <label class="form-check-label mx-2" for="inlineRadioDefault">Other</label>
                         </div>
                     </div>
                 </div>
@@ -100,9 +100,9 @@
                     <label for="floatingTextarea">Comments</label>
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
                 </div>
-                <div class="d-grid gap-2 row-cols-auto">
-                    <button type="button" class="btn btn-secondary">Cancel</button>
-                    <button type="button" class="btn btn-success">Submit</button>
+                <div class="gap-2 d-flex justify-content-evenly flex-wrap mb-3 d-inline-flex">
+                    <button class="btn btn-danger col-8 col-md-5" type="button">Cancel</button>
+                    <button class="btn btn-success col-8 col-md-5" type="button">Submit</button>
                 </div>
             </form>
         </section>

@@ -17,6 +17,7 @@ h1 {
     font-weight: bold;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin-bottom: 0px;
 }
 
 h2 {
@@ -24,6 +25,11 @@ h2 {
     font-weight: bold;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin-bottom: 0px;
+}
+h3 {
+    margin-bottom: 0px;
+    font-size: 22px;
 }
 
 /*!--------------HEADER--------------*/
@@ -267,7 +273,7 @@ main section h2 {
 
 /* Section Planning - Planner con link a Itinerary */
 
-.planning {
+/* .planning {
     padding-top: 30px;
 }
 
@@ -280,62 +286,7 @@ main section h2 {
 .planning div img {
     width: 100%;
     padding: 15px;
-}
-
-/* Section "From Past Trips" (Galeria de Imagenes) */
-
-.grid-galeria {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
-    gap: 15px;
-    padding: 10px;
-}
-
-.galeria-item {
-    position: relative;
-    height: 100%;
-}
-
-.galeria-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2%;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.galeria-item h3 {
-    position: absolute;
-    bottom: 0;
-    color: #F7F4F3;
-    background-color: #19093393;
-    width: 100%;
-    padding: 5px;
-    font-weight: 200;
-}
-
-.galeria-03 {
-    grid-row: span 2;
-}
-
-.galeria-05 {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.galeria-10 {
-    grid-column: span 2;
-}
-
-/* Formulario de Contacto */
-
-.formulario {
-    background-color: #F7F4F3;
-    padding: 10px 70px 10px 70px;
-    color: #003049;
-}
+} */
 
 /*!--------------MAIN DE LAS OTRAS PAGINAS--------------*/
 
@@ -430,6 +381,65 @@ main section h2 {
     font-size: 18px;
 }
 
+/* Pagina "From Past Trips" (Galeria de Imagenes) */
+
+.grid-galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+    padding: 10px;
+}
+
+.galeria-item {
+    position: relative;
+    height: 100%;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-item h3 {
+    position: absolute;
+    bottom: 0;
+    color: #F7F4F3;
+    background-color: #19093393;
+    width: 100%;
+    padding: 5px;
+    font-weight: 200;
+}
+
+.galeria-03 {
+    grid-row: span 2;
+}
+
+.galeria-05 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.galeria-10 {
+    grid-column: span 2;
+}
+
+/* Pagina de Contacto */
+
+.formulario {
+    background-color: #F7F4F3;
+    padding: 20px 70px 10px 70px;
+    color: #003049;
+}
+
+.form-check .form-check-input {
+    margin-left: 0px;
+}
+
 /* Clase y pseudoclase para los links en los parrafos de las paginas de contenido */
 
 p a {
@@ -500,6 +510,7 @@ p a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2px;
 }
 
 /*!--------------FOOTER--------------*/
@@ -590,6 +601,26 @@ footer div i {
     }
 
     .itinerary-titles {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 25px 50px 25px 50px;
+    }
+
+    .itinerary-titles h2 {
+        font-size: 24px;
+        padding: 0px;
+    }
+
+    .itinerary-titles h3 {
+        font-size: 18px;
+        padding: 0px;
+    }
+
+    .itinerary-titles p {
+        font-size: 16px;
+    }
+
+    /* .itinerary-titles {
         padding-bottom: 10px;
         gap: 2px;
         padding: 10px;
@@ -610,7 +641,7 @@ footer div i {
 
     .itinerary-titles p {
         font-size: 12px;
-    }
+    } */
 }
 
 @media screen and (max-width: 690px) {
@@ -643,26 +674,6 @@ footer div i {
 
     .hero {
         background-image: url(../img/main-hero-630.jpg);
-    }
-
-    .itinerary-titles {
-        grid-template-columns: repeat(2, 1.5fr);
-        gap: 10px;
-        padding: 25px;
-    }
-
-    .itinerary-titles h2 {
-        font-size: 24px;
-        padding: 0px;
-    }
-
-    .itinerary-titles h3 {
-        font-size: 18px;
-        padding: 0px;
-    }
-
-    .itinerary-titles p {
-        font-size: 16px;
     }
 
     main section h1 {
@@ -779,7 +790,17 @@ footer div i {
     }
 }
 
+@media screen and (max-width: 570px) {
+
+    .itinerary-titles {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 25px 25px 25px 25px;
+    }
+}
+
 @media screen and (max-width: 500px) {
+
     footer {
         flex-direction: column;
         height: auto;
@@ -846,6 +867,11 @@ footer div i {
     .planning {
         display: none;
     }
+    
+    .itinerary-titles {
+        padding: 25px 15px 25px 15px;
+        gap: 5px;
+    }
 }
 
 @media screen and (max-width: 365px) {
@@ -876,6 +902,27 @@ footer div i {
     .field-form {
         font-size: 15px;
     }
+
+    .itinerary-titles {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    /* .itinerary-titles h2 {
+        font-size: 24px;
+        padding: 0px;
+    }
+
+    .itinerary-titles h3 {
+        font-size: 18px;
+        padding: 0px;
+    }
+
+    .itinerary-titles p {
+        font-size: 16px;
+    } */
 }
 
 @media screen and (max-width: 330px) {
