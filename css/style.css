@@ -11,7 +11,7 @@
 }
 
 /*!--------------ANTI-BOOTSTRAP--------------*/
-
+/* Estilos que corrigen lo que se "rompe" cuando activo Bootstrap */
 h1 {
     display: block;
     font-weight: bold;
@@ -27,6 +27,7 @@ h2 {
     margin-inline-end: 0px;
     margin-bottom: 0px;
 }
+
 h3 {
     margin-bottom: 0px;
     font-size: 22px;
@@ -39,11 +40,10 @@ header {
     z-index: 1;
 }
 
-/* Clases para el nav post-Bootstrap */
+/* Clases para la Navbar */
 
 .navbar-og {
     background-color: #003049;
-    /* list-style: none; */
     font-weight: bold;
     font-size: 20px;
 }
@@ -62,9 +62,9 @@ header {
 
 .navbar-img {
     height: 80px;
-    /* margin: 2px; */
     padding: 5px;
 }
+
 .dropdown-item.active {
     background-color: #F7F4F3;
     color: #190933;
@@ -93,7 +93,8 @@ main section h2 {
     text-align: center;
 }
 
-/* Clase para Botones */
+/* Clases y Pseudoclases para Botones de las Previews */
+
 .button {
     background-color: #003049;
     padding: 5px 20px 5px 20px;
@@ -119,10 +120,9 @@ main section h2 {
     padding: 3px 18px 3px 18px;
 }
 
-/* Hero Section de Index */
+/* Hero Section - General */
 
-.hero {
-    background-image: url(../img/main-hero.jpg);
+.hero {    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -134,92 +134,57 @@ main section h2 {
     align-items: center;
 }
 
+/* Hero specific del index y paginas de contenido */
+
+/* Hero Section - Index */
+
+.hero-main {
+    background-image: url(../img/main-hero.jpg);
+}
+
 /* Hero Section - History */
 
 .hero-history {
     background-image: url(../img/history-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Hero Section - Outings */
 
 .hero-outings {
     background-image: url(../img/outings-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Hero Section - Shopping */
 
 .hero-shopping {
     background-image: url(../img/shopping-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Hero Section - Itinerary */
 
 .hero-itinerary {
     background-image: url(../img/itinerary-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
+/* Hero Section - Contact */
 
 .hero-contact {
     background-image: url(../img/contact-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
+/* Hero Section - Gallery */
 
 .hero-gallery {
     background-image: url(../img/gallery-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Section Contador - Index - Note to self, estaria bueno poder hacerlo sin depender de una URL externa */
+/* Section Contador - Index */
+
 .counter {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: #f7f4f35f;
+    background-color: #f7f4f38d;
     padding: 10px;
 }
 
@@ -271,24 +236,7 @@ main section h2 {
     text-align: center;
 }
 
-/* Section Planning - Planner con link a Itinerary */
-
-/* .planning {
-    padding-top: 30px;
-}
-
-.planning div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.planning div img {
-    width: 100%;
-    padding: 15px;
-} */
-
-/*!--------------MAIN DE LAS OTRAS PAGINAS--------------*/
+/*!--------------MAIN DE LAS PAGINAS DE CONTENIDO--------------*/
 
 /* Banner de Quote, debajo de la Hero Section de cada pagina */
 
@@ -342,7 +290,6 @@ main section h2 {
     flex-direction: row;
     padding: 10px;
 }
-
 
 .left-section img {
     width: 50%;
@@ -440,7 +387,7 @@ main section h2 {
     margin-left: 0px;
 }
 
-/* Clase y pseudoclase para los links en los parrafos de las paginas de contenido */
+/* Clases y Pseudoclases para los links en los parrafos de las paginas de contenido */
 
 p a {
     text-decoration: underline;
@@ -456,7 +403,7 @@ p a:hover {
     color: #73877b;
 }
 
-/* Para la pagina Itinerary, Calendario de Actividades */
+/* Para la pagina Itinerary (Calendario de Actividades) */
 
 .itinerary-titles {
     width: 100%;
@@ -524,16 +471,22 @@ footer {
     height: 200px;
 }
 
+/* Mapa de Google Maps */
+
 .map {
     padding-left: 15px;
     width: 300px;
     height: 150px;
 }
 
+/* Texto de Copyright */
+
 footer div p {
     padding: 15px;
     font-size: 14px;
 }
+
+/* Clase para iconos de Bootstrap - Redes Sociales */
 
 footer div i {
     font-size: 30px;
@@ -546,29 +499,37 @@ footer div i {
 
 .message-icon {
     position: fixed;
-    right: 30px;
+    right: 20px;
     bottom: 200px;
 }
 
 .bi-whatsapp {
-    font-size: 40px;
+    font-size: 35px;
     color: #73877b;
     text-shadow: 1px 1px #f7f4f3d9;
 }
 
 /*!--------------MEDIA QUERIES--------------*/
+
+@media screen and (max-width: 1020px) {
+    .message-icon {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .message-icon {
+        right: 10px;
+    }
+}
+
 @media screen and (max-width: 814px) {
     .message-icon {
         display: none;
     }
 
     .grid-galeria {
-        width: 100%;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 250px;
-        gap: 15px;
-        padding: 10px;
     }
 
     .galeria-05 {
@@ -619,29 +580,6 @@ footer div i {
     .itinerary-titles p {
         font-size: 16px;
     }
-
-    /* .itinerary-titles {
-        padding-bottom: 10px;
-        gap: 2px;
-        padding: 10px;
-    }
-
-    .single-day {
-        padding: 1px;
-    }
-
-    .itinerary-titles h2 {
-        font-size: 18px;
-        padding: 2px;
-    }
-
-    .itinerary-titles h3 {
-        font-size: 14px;
-    }
-
-    .itinerary-titles p {
-        font-size: 12px;
-    } */
 }
 
 @media screen and (max-width: 690px) {
@@ -672,7 +610,7 @@ footer div i {
 
 @media screen and (max-width: 630px) {
 
-    .hero {
+    .hero-main {
         background-image: url(../img/main-hero-630.jpg);
     }
 
@@ -683,7 +621,6 @@ footer div i {
     main section h2 {
         font-size: 70px;
     }
-
 }
 
 @media screen and (max-width: 610px) {
@@ -715,7 +652,7 @@ footer div i {
     .button:hover {
         padding: 13px 98px 13px 98px;
     }
-    
+
     .button:active {
         padding: 13px 98px 13px 98px;
     }
@@ -836,10 +773,7 @@ footer div i {
 @media screen and (max-width: 475px) {
 
     .grid-galeria {
-        width: 100%;
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 250px;
         gap: 10px;
     }
 
@@ -895,34 +829,12 @@ footer div i {
         font-size: 30px;
     }
 
-    .field-form {
-        width: 250px;
-    }
-
-    .field-form {
-        font-size: 15px;
-    }
-
     .itinerary-titles {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
-
-    /* .itinerary-titles h2 {
-        font-size: 24px;
-        padding: 0px;
-    }
-
-    .itinerary-titles h3 {
-        font-size: 18px;
-        padding: 0px;
-    }
-
-    .itinerary-titles p {
-        font-size: 16px;
-    } */
 }
 
 @media screen and (max-width: 330px) {

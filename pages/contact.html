@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="shortcut icon" href="../img/underground-favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">    <link rel="stylesheet" href="../css/style.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-og" data-bs-theme="dark">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html"><img class="navbar-img" src="../img/london-2023-logo.png"></a>
+                <a class="navbar-brand" href="../index.html"><img class="navbar-img"
+                        src="../img/london-2023-logo.png"></a>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Sections
                             </a>
                             <ul class="dropdown-menu navbar-og">
@@ -46,9 +53,24 @@
         </nav>
     </header>
     <main>
-        <section class="hero-contact">
-                <h1>CONTACT</h1>
+        <section class="hero hero-contact">
+            <h1>CONTACT</h1>
         </section>
+        <!-- CITA ALEGORICA A MODO DE INTRODUCCION -->
+        <section class="quote">
+            <div class="quote-open">
+                <img src="../img/quote-right.png" alt="Quote">
+            </div>
+            <div>
+                <h3>Gimme a ticket for an aeroplane, ain't got time to take a fast train. Lonely days are gone, I'm
+                    a-goin' home, my baby just a wrote me a letter</h3>
+                <p>-The Box Tops</p>
+            </div>
+            <div class="quote-close">
+                <img src="../img/quote-left.png" alt="Quote">
+            </div>
+        </section>
+        <!-- Formulario de Contacto -->
         <section id="formulario-contacto" class="container-fluid">
             <form action="" class="formulario row">
                 <div class="mb-3 col-lg-6 col-sm-12">
@@ -98,7 +120,8 @@
                 </div>
                 <div class="col-lg-6 col-sm-12 mb-3">
                     <label for="floatingTextarea">Comments</label>
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                        style="height: 100px"></textarea>
                 </div>
                 <div class="gap-2 d-flex justify-content-evenly flex-wrap mb-3 d-inline-flex">
                     <button class="btn btn-danger col-8 col-md-5" type="button">Cancel</button>
@@ -108,19 +131,27 @@
         </section>
     </main>
     <footer>
+        <!-- MAPA DE GOOGLE MAPS -->
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.094069102543!2d-0.1323393!3d51.5219571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2ef62e1337%3A0x5d00b77e5ca5425d!2sRegency%20House%20Hotel!5e0!3m2!1sen!2sar!4v1692831071988!5m2!1sen!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.094069102543!2d-0.1323393!3d51.5219571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2ef62e1337%3A0x5d00b77e5ca5425d!2sRegency%20House%20Hotel!5e0!3m2!1sen!2sar!4v1692831071988!5m2!1sen!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <!-- Copyright y Redes Sociales -->
         <div>
             <p>© Pinnuliverse - All Rights Reserved</p>
-            <a href="https://open.spotify.com/playlist/3xpexoUrv4xolvrvpQT3Rr?si=31d8321f323b4c19" target="_blank"><i class="bi bi-spotify"></i></a>
+            <a href="https://open.spotify.com/playlist/3xpexoUrv4xolvrvpQT3Rr?si=31d8321f323b4c19" target="_blank"><i
+                    class="bi bi-spotify"></i></a>
             <a href="https://www.instagram.com/regencyhouselondon/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://youtu.be/EfK-WX2pa8c?si=JfFM6MXgvld1Mwbv" target="_blank"><i class="bi bi-youtube"></i></a>
         </div>
+        <!-- Icono de Whatsapp para mensajeria -->
         <div class="message-icon">
             <a href="https://wa.me/+531154914850" target="_blank"><i class="bi bi-whatsapp"></i></a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 </html>
