@@ -183,12 +183,42 @@ main section h2 {
     align-items: center;
 }
 
+.hero-contact {
+    background-image: url(../img/contact-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-gallery {
+    background-image: url(../img/gallery-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Section Contador - Index - Note to self, estaria bueno poder hacerlo sin depender de una URL externa */
 .counter {
     display: flex;
     justify-content: center;
     align-content: center;
     background-color: rgb(51, 53, 53);
+}
+
+/* Section Welcome - Mensaje de Bienvenida al sitio */
+
+.welcome {
+    text-align:center;
 }
 
 /* Section Cards con Previews para History, Outings y Shopping */
@@ -219,14 +249,13 @@ main section h2 {
     object-fit: cover;
 }
 
-
 .preview-card p {
     width: 100%;
     font-size: 17px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    height: 90px;
+    height: 110px;
     text-align: center;
 }
 
@@ -592,7 +621,7 @@ footer div i {
         padding-top: 8px;
         padding-bottom: 8px;
         margin-bottom: 15px;
-        height: 80px;
+        height: 100px;
     }
 
     main section h1 {
@@ -605,6 +634,10 @@ footer div i {
 }
 
 @media screen and (max-width: 630px) {
+
+    .hero {
+        background-image: url(../img/main-hero-630.jpg);
+    }
 
     .itinerary-titles {
         grid-template-columns: repeat(2, 1.5fr);
@@ -652,6 +685,14 @@ footer div i {
 
     .button {
         padding: 15px 100px 15px 100px;
+    }
+
+    .button:hover {
+        padding: 13px 98px 13px 98px;
+    }
+    
+    .button:active {
+        padding: 13px 98px 13px 98px;
     }
 
     .previews {
@@ -715,6 +756,12 @@ footer div i {
         padding: 15px;
         text-align: justify;
         font-size: 18px;
+    }
+
+    .formulario {
+        background-color: #F7F4F3;
+        padding: 10px 20px 10px 20px;
+        color: #003049;
     }
 }
 
@@ -790,6 +837,14 @@ footer div i {
 @media screen and (max-width: 365px) {
     .button {
         padding: 10px 50px 10px 50px;
+    }
+
+    .button:hover {
+        padding: 8px 48px 8px 48px;
+    }
+    
+    .button:active {
+        padding: 8px 48px 8px 48px;
     }
 
     main section h1 {
