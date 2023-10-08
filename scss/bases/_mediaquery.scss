@@ -1,0 +1,425 @@
+@media screen and (max-width: 1020px) {
+    footer {
+        .message-icon {
+            right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        .message-icon {
+            right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 814px) {
+    footer {
+        .message-icon {
+            display: none;
+        }
+    }
+
+    main {
+        .galeria {
+            .grid-galeria {
+                grid-template-columns: repeat(2, 1fr);
+                .galeria-05 {
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+                .galeria-10 {
+                    grid-column: span 2;
+                }
+            }
+        }
+    }
+
+    main {
+        .quote {
+            .quote-open {
+                img {
+                    width: 40px;
+                }
+            }
+            div {
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+            .quote-close {
+                img {
+                    width: 40px;
+                }
+            }
+        }
+        section {
+            .left-section {
+                p {
+                    font-size: 15px;
+                }
+            }
+            .right-section {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+        .itinerary-titles {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 25px 50px 25px 50px;
+            .single-day {
+                h2 {
+                    font-size: 24px;
+                    padding: 0px;
+                }
+                h3 {
+                    font-size: 18px;
+                    padding: 0px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    main {
+        .hero {
+            div {
+                h1 {
+                    font-size: 90px;
+                }
+            }
+            h1 {
+                font-size: 90px;
+            }
+        }
+        .welcome {
+            h2 {        
+                font-size: 80px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+        }
+        .galeria {
+            h2 {        
+                font-size: 80px;
+            }
+        }
+        .previews {
+            gap: 15px;
+            .preview-card {
+                img {
+                    padding-top: 5px;
+                }
+                p {
+                    font-size: 15px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    margin-bottom: 15px;
+                    height: 100px;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 630px) {
+
+    main {
+        .hero-main {
+            background-image: url(../img/main-hero-630.jpg);
+            div {
+                h1 {
+                    font-size: 80px;
+                }
+            }
+            h1 {
+                font-size: 80px;
+            }
+        }
+        .welcome {
+            h2 {        
+                font-size: 70px;
+            }
+            h3 { font-size: 18px;
+            }
+        }
+        .galeria {
+            h2 {        
+                font-size: 70px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+
+    main {
+        .hero {
+            div {
+                h1 {
+                    font-size: 70px;
+                }
+            }
+            .counter {
+                display: none;
+            }
+            .counter-small {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                background-color: #f7f4f35f;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 70px;
+            }
+        }
+        .previews {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            padding: 15px;
+            .preview-card {
+                justify-content: space-evenly;      
+                .button {
+                    padding: 15px 100px 15px 100px;
+                    font-size: 20px;
+                    &:hover {
+                        padding: 13px 98px 13px 98px;
+                    }
+                    &:active {
+                        padding: 13px 98px 13px 98px;
+                    }
+                }
+                img {
+                    width: auto;
+                    height: auto;
+                    padding-top: 5px;
+                    object-fit: fill;
+                }
+                p {
+                    display: none;
+                }
+            }
+        }
+    } 
+
+    main {
+        section {
+            .left-section {
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                padding: 15px;
+                img {
+                    width: 100%;
+                }
+                p {
+                    width: 100%;
+                    padding: 15px;
+                    text-align: justify;
+                    font-size: 18px;
+                }
+            }
+            .right-section {
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                padding: 15px;
+                p {
+                    order: 2;
+                    width: 100%;
+                    padding: 15px;
+                    text-align: justify;
+                    font-size: 18px;
+                }
+                img {
+                    width: 100%;
+                    order: 1;
+                }
+            }
+        }
+    }
+
+    main { 
+        section {
+            .formulario {
+                padding: 10px 20px 10px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    main {
+        .itinerary-titles {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 25px 25px 25px 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    footer {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
+        .map {
+            order: 3;
+            padding-left: 0px;
+            padding: 15px;
+            iframe { 
+                width: 200px;
+                height: 100px;
+            }
+        }
+        div {
+            p {
+                padding: 15px;
+                font-size: 14px;
+                order: 1;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+
+    main {
+        .galeria {
+            .grid-galeria {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+                .galeria-03 {
+                    grid-row: span 1;
+                }
+                .galeria-05 {
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+                .galeria-10 {
+                    grid-column: span 1;
+                }
+            }
+        }
+    }
+
+    main {
+        .hero {
+            div {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+            h1 {
+                font-size: 50px;
+            }
+        }
+        .welcome {
+            h2 {        
+                font-size: 40px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+        }
+        .galeria {
+            h2 {        
+                font-size: 40px;
+            }
+        }
+    } 
+
+    main {
+        .itinerary-titles {
+            padding: 25px 15px 25px 15px;
+            gap: 5px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 365px) {
+
+    main {
+        .hero {
+            div {
+                h1 {
+                    font-size: 35px;
+                }
+            }
+            h1 {
+                font-size: 35px;
+            }
+        }
+        .welcome {
+            h2 {
+                font-size: 30px;
+            }
+            h3 {
+                font-size: 14px;
+            }
+        }
+        .previews {
+            .preview-card {    
+                .button {
+                    padding: 10px 50px 10px 50px;
+                    font-size: 18px;
+                    &:hover {
+                        padding: 8px 48px 8px 48px;
+                    }
+                    &:active {
+                        padding: 8px 48px 8px 48px;
+                    }
+                }
+            }
+        }
+    } 
+
+    main {
+        .itinerary-titles {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    main {
+        .previews {
+            .preview-card {
+                img {
+                    width: 75%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    footer {
+        .map {
+            display: none;
+        }
+    }
+
+}

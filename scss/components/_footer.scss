@@ -1,0 +1,40 @@
+footer {
+    background-color: #190933;
+    text-align: center;
+    color: #F7F4F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    .map {
+        padding-left: 15px;
+        width: 300px;
+        height: 150px;
+    }
+    div {
+        p {
+            padding: 15px;
+            font-size: 14px;
+        }
+        a {
+            i {
+                font-size: 30px;
+                display: inline;
+                padding: 5px;
+                color: #F7F4F3;
+                }
+            }
+    }
+    .message-icon {
+        position: fixed;
+        right: 20px;
+        bottom: 200px;
+        a {
+            .bi-whatsapp {
+                font-size: 35px;
+                color: #73877b;
+                text-shadow: 1px 1px #f7f4f3d9;
+            }
+        }
+    }
+}

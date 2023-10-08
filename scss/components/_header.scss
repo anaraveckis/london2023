@@ -1,0 +1,19 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .navbar-og {
+        /* Clases para la Navbar */
+        background-color: #003049;
+        font-weight: bold;
+        font-size: 20px;
+        div {
+            a {
+                .navbar-img{
+                    height: 80px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

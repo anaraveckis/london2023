@@ -1,0 +1,738 @@
+/*FUENTE GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100;0,400;0,500;0,600;0,900;1,100&display=swap");
+/*!--------------RESET--------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rokkitt', serif !important; }
+
+/*!--------------ANTI-BOOTSTRAP--------------*/
+/* Estilos que corrigen lo que se "rompe" cuando activo Bootstrap */
+h1 {
+  display: block;
+  font-weight: bold;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0px; }
+
+h2 {
+  display: block;
+  font-weight: bold;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0px; }
+
+h3 {
+  margin-bottom: 0px;
+  font-size: 22px; }
+
+.dropdown-item {
+  font-weight: 600; }
+
+.dropdown-toggle::after {
+  vertical-align: middle; }
+
+.navbar-nav {
+  --bs-nav-link-padding-x: 10px; }
+
+.dropdown-item.active {
+  background-color: #F7F4F3;
+  color: #190933; }
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #F7F4F3;
+  --bs-dropdown-link-active-color: #190933; }
+
+.form-check .form-check-input {
+  margin-left: 0px; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header .navbar-og {
+    /* Clases para la Navbar */
+    background-color: #003049;
+    font-weight: bold;
+    font-size: 20px; }
+    header .navbar-og div a .navbar-img {
+      height: 80px;
+      padding: 5px; }
+
+main {
+  font-family: 'Rokkitt', serif;
+  background-color: #F7F4F3;
+  /* Hero Section - Index */ }
+  main .hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .hero div h1 {
+      font-size: 100px;
+      color: #9A2A18;
+      text-shadow: 2px 2px #f7f4f3cf; }
+    main .hero .counter {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      background-color: #f7f4f38d;
+      padding: 10px; }
+    main .hero .counter-small {
+      display: none; }
+  main .hero-main {
+    background-image: url(../img/main-hero.jpg); }
+  main .welcome {
+    text-align: center; }
+    main .welcome h2 {
+      color: #9A2A18;
+      font-size: 80px;
+      text-align: center; }
+  main .previews {
+    background-color: #F7F4F3;
+    color: #190933;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    width: 100%;
+    padding: 15px; }
+    main .previews .preview-card {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      main .previews .preview-card img {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        object-fit: cover; }
+      main .previews .preview-card p {
+        width: 100%;
+        font-size: 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        height: 110px;
+        text-align: center; }
+      main .previews .preview-card .button {
+        background-color: #003049;
+        padding: 5px 20px 5px 20px;
+        text-decoration: none;
+        color: #F7F4F3;
+        font-weight: 800;
+        font-size: 22px;
+        margin: 10px; }
+        main .previews .preview-card .button:hover {
+          color: #003049;
+          background-color: #F7F4F3;
+          border-width: 2px;
+          border-color: #003049;
+          border-style: dashed;
+          padding: 3px 18px 3px 18px; }
+        main .previews .preview-card .button:active {
+          background-color: #003049;
+          color: #F7F4F3;
+          padding: 3px 18px 3px 18px; }
+
+main {
+  font-family: 'Rokkitt', serif;
+  background-color: #F7F4F3;
+  /* Hero Section - Index */
+  /* Hero Section - History */
+  /* Hero Section - Outings */
+  /* Hero Section - Shopping */ }
+  main .hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .hero h1 {
+      font-size: 100px;
+      color: #9A2A18;
+      text-shadow: 2px 2px #f7f4f3cf; }
+  main .hero-main {
+    background-image: url(../img/main-hero.jpg); }
+  main .hero-history {
+    background-image: url(../img/history-hero.jpg); }
+  main .hero-outings {
+    background-image: url(../img/outings-hero.jpg); }
+  main .hero-shopping {
+    background-image: url(../img/shopping-hero.jpg); }
+  main .quote {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; }
+    main .quote .quote-open {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 5px;
+      width: 100%; }
+      main .quote .quote-open img {
+        width: 50px; }
+    main .quote div h3 {
+      text-align: justify;
+      font-size: 25px;
+      font-style: italic; }
+    main .quote div p {
+      font-size: 18px;
+      text-align: right;
+      font-weight: 400; }
+    main .quote .quote-close {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 5px;
+      width: 100%; }
+      main .quote .quote-close img {
+        width: 50px; }
+  main .left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px; }
+    main .left-section img {
+      width: 50%;
+      object-fit: cover;
+      display: inline;
+      height: auto; }
+    main .left-section p {
+      width: 40%;
+      padding: 15px;
+      text-align: right;
+      font-size: 18px; }
+      main .left-section p a {
+        text-decoration: underline;
+        color: #9A2A18; }
+        main .left-section p a:visited {
+          color: #73877b; }
+        main .left-section p a:hover {
+          text-decoration-style: dashed;
+          color: #73877b; }
+  main .right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px; }
+    main .right-section p {
+      width: 40%;
+      padding: 15px;
+      text-align: left;
+      font-size: 18px; }
+    main .right-section img {
+      width: 50%;
+      display: inline;
+      object-fit: cover; }
+
+main {
+  font-family: 'Rokkitt', serif;
+  background-color: #F7F4F3;
+  /* Hero Section - Contact */ }
+  main .hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .hero h1 {
+      font-size: 100px;
+      color: #9A2A18;
+      text-shadow: 2px 2px #f7f4f3cf; }
+  main .hero-contact {
+    background-image: url(../img/contact-hero.jpg); }
+  main .quote {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; }
+    main .quote .quote-open {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 5px;
+      width: 100%; }
+      main .quote .quote-open img {
+        width: 50px; }
+    main .quote div h3 {
+      text-align: justify;
+      font-size: 25px;
+      font-style: italic; }
+    main .quote div p {
+      font-size: 18px;
+      text-align: right;
+      font-weight: 400; }
+    main .quote .quote-close {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 5px;
+      width: 100%; }
+      main .quote .quote-close img {
+        width: 50px; }
+  main section .formulario {
+    background-color: #F7F4F3;
+    padding: 20px 70px 10px 70px;
+    color: #003049; }
+
+main {
+  font-family: 'Rokkitt', serif;
+  background-color: #F7F4F3;
+  /* Hero Section - Gallery */ }
+  main .hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .hero h1 {
+      font-size: 100px;
+      color: #9A2A18;
+      text-shadow: 2px 2px #f7f4f3cf; }
+  main .hero-gallery {
+    background-image: url(../img/gallery-hero.jpg); }
+  main .quote {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; }
+    main .quote .quote-open {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 5px;
+      width: 100%; }
+      main .quote .quote-open img {
+        width: 50px; }
+    main .quote div h3 {
+      text-align: justify;
+      font-size: 25px;
+      font-style: italic; }
+    main .quote div p {
+      font-size: 18px;
+      text-align: right;
+      font-weight: 400; }
+    main .quote .quote-close {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 5px;
+      width: 100%; }
+      main .quote .quote-close img {
+        width: 50px; }
+  main .galeria h2 {
+    display: block;
+    font-weight: bold;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    color: #9A2A18;
+    font-size: 80px;
+    text-align: center; }
+  main .galeria .grid-galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+    padding: 10px; }
+    main .galeria .grid-galeria .galeria-item {
+      position: relative;
+      height: 100%; }
+      main .galeria .grid-galeria .galeria-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2%;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+      main .galeria .grid-galeria .galeria-item h3 {
+        position: absolute;
+        bottom: 0;
+        color: #F7F4F3;
+        background-color: #19093393;
+        width: 100%;
+        padding: 5px;
+        font-weight: 200; }
+    main .galeria .grid-galeria .galeria-03 {
+      grid-row: span 2; }
+    main .galeria .grid-galeria .galeria-05 {
+      grid-column: span 2;
+      grid-row: span 2; }
+    main .galeria .grid-galeria .galeria-10 {
+      grid-column: span 2; }
+
+main {
+  font-family: 'Rokkitt', serif;
+  background-color: #F7F4F3;
+  /* Hero Section - Itinerary */ }
+  main .hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .hero h1 {
+      font-size: 100px;
+      color: #9A2A18;
+      text-shadow: 2px 2px #f7f4f3cf; }
+  main .hero-itinerary {
+    background-image: url(../img/itinerary-hero.jpg); }
+  main .quote {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; }
+    main .quote .quote-open {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 5px;
+      width: 100%; }
+      main .quote .quote-open img {
+        width: 50px; }
+    main .quote div h3 {
+      text-align: justify;
+      font-size: 25px;
+      font-style: italic; }
+    main .quote div p {
+      font-size: 18px;
+      text-align: right;
+      font-weight: 400; }
+    main .quote .quote-close {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 5px;
+      width: 100%; }
+      main .quote .quote-close img {
+        width: 50px; }
+  main .itinerary-titles {
+    width: 100%;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 200px;
+    gap: 5px;
+    padding: 15px; }
+    main .itinerary-titles .single-day {
+      width: 100%;
+      height: 200px;
+      padding: 2px; }
+      main .itinerary-titles .single-day h2 {
+        text-align: center;
+        font-size: 20px;
+        border: #190933;
+        border-width: 1px;
+        border-style: solid;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        color: #9A2A18; }
+      main .itinerary-titles .single-day h3 {
+        text-align: center;
+        font-size: 15px;
+        border: #190933;
+        border-width: 1px;
+        border-style: solid;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px; }
+      main .itinerary-titles .single-day p {
+        text-align: center;
+        font-size: 12px;
+        border: #190933;
+        border-width: 1px;
+        border-style: solid;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px; }
+
+footer {
+  background-color: #190933;
+  text-align: center;
+  color: #F7F4F3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px; }
+  footer .map {
+    padding-left: 15px;
+    width: 300px;
+    height: 150px; }
+  footer div p {
+    padding: 15px;
+    font-size: 14px; }
+  footer div a i {
+    font-size: 30px;
+    display: inline;
+    padding: 5px;
+    color: #F7F4F3; }
+  footer .message-icon {
+    position: fixed;
+    right: 20px;
+    bottom: 200px; }
+    footer .message-icon a .bi-whatsapp {
+      font-size: 35px;
+      color: #73877b;
+      text-shadow: 1px 1px #f7f4f3d9; }
+
+@media screen and (max-width: 1020px) {
+  footer .message-icon {
+    right: 15px; } }
+
+@media screen and (max-width: 900px) {
+  footer .message-icon {
+    right: 10px; } }
+
+@media screen and (max-width: 814px) {
+  footer .message-icon {
+    display: none; }
+  main .galeria .grid-galeria {
+    grid-template-columns: repeat(2, 1fr); }
+    main .galeria .grid-galeria .galeria-05 {
+      grid-column: span 1;
+      grid-row: span 1; }
+    main .galeria .grid-galeria .galeria-10 {
+      grid-column: span 2; }
+  main .quote .quote-open img {
+    width: 40px; }
+  main .quote div h3 {
+    font-size: 20px; }
+  main .quote div p {
+    font-size: 15px; }
+  main .quote .quote-close img {
+    width: 40px; }
+  main section .left-section p {
+    font-size: 15px; }
+  main section .right-section p {
+    font-size: 15px; }
+  main .itinerary-titles {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 25px 50px 25px 50px; }
+    main .itinerary-titles .single-day h2 {
+      font-size: 24px;
+      padding: 0px; }
+    main .itinerary-titles .single-day h3 {
+      font-size: 18px;
+      padding: 0px; }
+    main .itinerary-titles .single-day p {
+      font-size: 16px; } }
+
+@media screen and (max-width: 690px) {
+  main .hero div h1 {
+    font-size: 90px; }
+  main .hero h1 {
+    font-size: 90px; }
+  main .welcome h2 {
+    font-size: 80px; }
+  main .welcome h3 {
+    font-size: 20px; }
+  main .galeria h2 {
+    font-size: 80px; }
+  main .previews {
+    gap: 15px; }
+    main .previews .preview-card img {
+      padding-top: 5px; }
+    main .previews .preview-card p {
+      font-size: 15px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      height: 100px; } }
+
+@media screen and (max-width: 630px) {
+  main .hero-main {
+    background-image: url(../img/main-hero-630.jpg); }
+    main .hero-main div h1 {
+      font-size: 80px; }
+    main .hero-main h1 {
+      font-size: 80px; }
+  main .welcome h2 {
+    font-size: 70px; }
+  main .welcome h3 {
+    font-size: 18px; }
+  main .galeria h2 {
+    font-size: 70px; } }
+
+@media screen and (max-width: 610px) {
+  main .hero div h1 {
+    font-size: 70px; }
+  main .hero .counter {
+    display: none; }
+  main .hero .counter-small {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #f7f4f35f;
+    padding: 10px; }
+  main .hero h1 {
+    font-size: 70px; }
+  main .previews {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 15px; }
+    main .previews .preview-card {
+      justify-content: space-evenly; }
+      main .previews .preview-card .button {
+        padding: 15px 100px 15px 100px;
+        font-size: 20px; }
+        main .previews .preview-card .button:hover {
+          padding: 13px 98px 13px 98px; }
+        main .previews .preview-card .button:active {
+          padding: 13px 98px 13px 98px; }
+      main .previews .preview-card img {
+        width: auto;
+        height: auto;
+        padding-top: 5px;
+        object-fit: fill; }
+      main .previews .preview-card p {
+        display: none; }
+  main section .left-section {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px; }
+    main section .left-section img {
+      width: 100%; }
+    main section .left-section p {
+      width: 100%;
+      padding: 15px;
+      text-align: justify;
+      font-size: 18px; }
+  main section .right-section {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px; }
+    main section .right-section p {
+      order: 2;
+      width: 100%;
+      padding: 15px;
+      text-align: justify;
+      font-size: 18px; }
+    main section .right-section img {
+      width: 100%;
+      order: 1; }
+  main section .formulario {
+    padding: 10px 20px 10px 20px; } }
+
+@media screen and (max-width: 570px) {
+  main .itinerary-titles {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 25px 25px 25px 25px; } }
+
+@media screen and (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: space-between; }
+    footer .map {
+      order: 3;
+      padding-left: 0px;
+      padding: 15px; }
+      footer .map iframe {
+        width: 200px;
+        height: 100px; }
+    footer div p {
+      padding: 15px;
+      font-size: 14px;
+      order: 1; } }
+
+@media screen and (max-width: 475px) {
+  main .galeria .grid-galeria {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px; }
+    main .galeria .grid-galeria .galeria-03 {
+      grid-row: span 1; }
+    main .galeria .grid-galeria .galeria-05 {
+      grid-column: span 1;
+      grid-row: span 1; }
+    main .galeria .grid-galeria .galeria-10 {
+      grid-column: span 1; }
+  main .hero div h1 {
+    font-size: 50px; }
+  main .hero h1 {
+    font-size: 50px; }
+  main .welcome h2 {
+    font-size: 40px; }
+  main .welcome h3 {
+    font-size: 16px; }
+  main .galeria h2 {
+    font-size: 40px; }
+  main .itinerary-titles {
+    padding: 25px 15px 25px 15px;
+    gap: 5px; } }
+
+@media screen and (max-width: 365px) {
+  main .hero div h1 {
+    font-size: 35px; }
+  main .hero h1 {
+    font-size: 35px; }
+  main .welcome h2 {
+    font-size: 30px; }
+  main .welcome h3 {
+    font-size: 14px; }
+  main .previews .preview-card .button {
+    padding: 10px 50px 10px 50px;
+    font-size: 18px; }
+    main .previews .preview-card .button:hover {
+      padding: 8px 48px 8px 48px; }
+    main .previews .preview-card .button:active {
+      padding: 8px 48px 8px 48px; }
+  main .itinerary-titles {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px; } }
+
+@media screen and (max-width: 330px) {
+  main .previews .preview-card img {
+    width: 75%;
+    height: auto;
+    object-fit: cover; }
+  footer .map {
+    display: none; } }
