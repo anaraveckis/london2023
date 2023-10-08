@@ -37,15 +37,30 @@ h3 {
   --bs-nav-link-padding-x: 10px; }
 
 .dropdown-item.active {
-  background-color: #F7F4F3;
+  background-color: #f7f4f3d1;
   color: #190933; }
 
 .dropdown-menu {
-  --bs-dropdown-link-active-bg: #F7F4F3;
+  --bs-dropdown-link-active-bg: $color-claro;
   --bs-dropdown-link-active-color: #190933; }
 
 .form-check .form-check-input {
   margin-left: 0px; }
+
+main .hero, main .hero .counter, main .left-section, main .right-section, main .itinerary-titles .single-day h2, main .itinerary-titles .single-day h3, main .itinerary-titles .single-day p {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .quote {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 header {
   position: sticky;
@@ -70,19 +85,13 @@ main {
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: column; }
     main .hero div h1 {
       font-size: 100px;
       color: #9A2A18;
-      text-shadow: 2px 2px #f7f4f3cf; }
+      text-shadow: 2px 2px #f7f4f3dd; }
     main .hero .counter {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      background-color: #f7f4f38d;
+      background-color: #f7f4f3b4;
       padding: 10px; }
     main .hero .counter-small {
       display: none; }
@@ -155,14 +164,11 @@ main {
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: column; }
     main .hero h1 {
       font-size: 100px;
       color: #9A2A18;
-      text-shadow: 2px 2px #f7f4f3cf; }
+      text-shadow: 2px 2px #f7f4f3dd; }
   main .hero-main {
     background-image: url(../img/main-hero.jpg); }
   main .hero-history {
@@ -174,9 +180,6 @@ main {
   main .quote {
     text-align: center;
     padding: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: column; }
     main .quote .quote-open {
       display: flex;
@@ -186,14 +189,16 @@ main {
       width: 100%; }
       main .quote .quote-open img {
         width: 50px; }
-    main .quote div h3 {
+    main .quote div h2 {
       text-align: justify;
       font-size: 25px;
-      font-style: italic; }
+      font-style: italic;
+      font-weight: 200; }
     main .quote div p {
       font-size: 18px;
       text-align: right;
-      font-weight: 400; }
+      font-weight: 400;
+      color: #003049; }
     main .quote .quote-close {
       display: flex;
       justify-content: end;
@@ -203,9 +208,6 @@ main {
       main .quote .quote-close img {
         width: 50px; }
   main .left-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
     padding: 10px; }
     main .left-section img {
@@ -227,9 +229,6 @@ main {
           text-decoration-style: dashed;
           color: #73877b; }
   main .right-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
     padding: 10px; }
     main .right-section p {
@@ -252,23 +251,16 @@ main {
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: column; }
     main .hero h1 {
       font-size: 100px;
       color: #9A2A18;
-      text-shadow: 2px 2px #f7f4f3cf; }
+      text-shadow: 2px 2px #f7f4f3dd; }
   main .hero-contact {
     background-image: url(../img/contact-hero.jpg); }
   main .quote {
     text-align: center;
-    padding: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column; }
+    padding: 15px; }
     main .quote .quote-open {
       display: flex;
       justify-content: space-between;
@@ -277,10 +269,11 @@ main {
       width: 100%; }
       main .quote .quote-open img {
         width: 50px; }
-    main .quote div h3 {
+    main .quote div h2 {
       text-align: justify;
       font-size: 25px;
-      font-style: italic; }
+      font-style: italic;
+      font-weight: 200; }
     main .quote div p {
       font-size: 18px;
       text-align: right;
@@ -308,23 +301,16 @@ main {
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: column; }
     main .hero h1 {
       font-size: 100px;
       color: #9A2A18;
-      text-shadow: 2px 2px #f7f4f3cf; }
+      text-shadow: 2px 2px #f7f4f3dd; }
   main .hero-gallery {
     background-image: url(../img/gallery-hero.jpg); }
   main .quote {
     text-align: center;
-    padding: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column; }
+    padding: 15px; }
     main .quote .quote-open {
       display: flex;
       justify-content: space-between;
@@ -333,10 +319,11 @@ main {
       width: 100%; }
       main .quote .quote-open img {
         width: 50px; }
-    main .quote div h3 {
+    main .quote div h2 {
       text-align: justify;
       font-size: 25px;
-      font-style: italic; }
+      font-style: italic;
+      font-weight: 200; }
     main .quote div p {
       font-size: 18px;
       text-align: right;
@@ -400,22 +387,16 @@ main {
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: column; }
     main .hero h1 {
       font-size: 100px;
       color: #9A2A18;
-      text-shadow: 2px 2px #f7f4f3cf; }
+      text-shadow: 2px 2px #f7f4f3dd; }
   main .hero-itinerary {
     background-image: url(../img/itinerary-hero.jpg); }
   main .quote {
     text-align: center;
     padding: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: column; }
     main .quote .quote-open {
       display: flex;
@@ -425,10 +406,11 @@ main {
       width: 100%; }
       main .quote .quote-open img {
         width: 50px; }
-    main .quote div h3 {
+    main .quote div h2 {
       text-align: justify;
       font-size: 25px;
-      font-style: italic; }
+      font-style: italic;
+      font-weight: 200; }
     main .quote div p {
       font-size: 18px;
       text-align: right;
@@ -460,9 +442,6 @@ main {
         border-width: 1px;
         border-style: solid;
         height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 4px;
         color: #9A2A18; }
       main .itinerary-titles .single-day h3 {
@@ -472,9 +451,6 @@ main {
         border-width: 1px;
         border-style: solid;
         height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 2px; }
       main .itinerary-titles .single-day p {
         text-align: center;
@@ -483,18 +459,12 @@ main {
         border-width: 1px;
         border-style: solid;
         height: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 2px; }
 
 footer {
   background-color: #190933;
   text-align: center;
   color: #F7F4F3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 200px; }
   footer .map {
     padding-left: 15px;
@@ -513,9 +483,10 @@ footer {
     right: 20px;
     bottom: 200px; }
     footer .message-icon a .bi-whatsapp {
-      font-size: 35px;
-      color: #73877b;
-      text-shadow: 1px 1px #f7f4f3d9; }
+      font-size: 40px;
+      color: #003049;
+      text-shadow: 1px 1px #f7f4f3dd;
+      font-weight: bold; }
 
 @media screen and (max-width: 1020px) {
   footer .message-icon {
@@ -537,7 +508,7 @@ footer {
       grid-column: span 2; }
   main .quote .quote-open img {
     width: 40px; }
-  main .quote div h3 {
+  main .quote div h2 {
     font-size: 20px; }
   main .quote div p {
     font-size: 15px; }
@@ -605,7 +576,7 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: #f7f4f35f;
+    background-color: #f7f4f3b4;
     padding: 10px; }
   main .hero h1 {
     font-size: 70px; }

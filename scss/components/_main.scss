@@ -1,29 +1,25 @@
 main {
     // INDEX
     font-family: 'Rokkitt', serif;
-    background-color: #F7F4F3;
+    background-color: $color-claro;
     .hero {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
         height: 300px;
-        display: flex;
+        @extend %flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         div {
             h1 {
                 font-size: 100px;
-                color: #9A2A18;
-                text-shadow: 2px 2px #f7f4f3cf;
+                color: $color-enfasis;
+                text-shadow: 2px 2px nth($color-claro-transparencias, 1);
             }
         }
         .counter {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            background-color: #f7f4f38d;
+            @extend %flex-center;
+            background-color: nth($color-claro-transparencias, 2);
             padding: 10px;
         }
         .counter-small {
@@ -37,14 +33,14 @@ main {
     .welcome {
         text-align:center;
         h2 {
-            color: #9A2A18;
+            color: $color-enfasis;
             font-size: 80px;
             text-align: center;
         }
     }
     .previews {
-        background-color: #F7F4F3;
-        color: #190933;
+        background-color: $color-claro;
+        color: $color-fondo-alternativo;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -52,9 +48,7 @@ main {
         width: 100%;
         padding: 15px;
         .preview-card {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @include flex (flex, space-around, center);
             flex-direction: column;
             flex-wrap: wrap;
             img {
@@ -73,24 +67,24 @@ main {
                 text-align: center;
             }
             .button {
-                background-color: #003049;
+                background-color: $color-principal;
                 padding: 5px 20px 5px 20px;
                 text-decoration: none;
-                color: #F7F4F3;
+                color: $color-claro;
                 font-weight: 800;
                 font-size: 22px;
                 margin: 10px;
                 &:hover {
-                    color: #003049;
-                    background-color: #F7F4F3;
+                    color: $color-principal;
+                    background-color: $color-claro;
                     border-width: 2px;
-                    border-color: #003049;
+                    border-color: $color-principal;
                     border-style: dashed;
                     padding: 3px 18px 3px 18px;
                 }
                 &:active {
-                    background-color: #003049;
-                    color: #F7F4F3;
+                    background-color: $color-principal;
+                    color: $color-claro;
                     padding: 3px 18px 3px 18px;
                 }
             }

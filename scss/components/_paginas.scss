@@ -1,21 +1,19 @@
 main {
     // Paginas de Contenido - Shopping Outings History
     font-family: 'Rokkitt', serif;
-    background-color: #F7F4F3;
+    background-color: $color-claro;
     .hero {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
         height: 300px;
-        display: flex;
+        @extend %flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
             h1 {
                 font-size: 100px;
-                color: #9A2A18;
-                text-shadow: 2px 2px #f7f4f3cf;
+                color: $color-enfasis;
+                text-shadow: 2px 2px nth($color-claro-transparencias,1);
             }
     }
     /* Hero Section - Index */
@@ -37,14 +35,10 @@ main {
     .quote {
         text-align: center;
         padding: 15px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        @extend %flex-evenly;
         flex-direction: column;
         .quote-open {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
+            @include flex (flex, space-between, start);
             padding: 5px;
             width: 100%;
             img {
@@ -52,21 +46,21 @@ main {
             }
         }
         div {
-            h3 {
+            h2 {
                 text-align: justify;
                 font-size: 25px;
                 font-style: italic;
+                font-weight: 200;
             }
             p {
                 font-size: 18px;
                 text-align: right;
                 font-weight: 400;
+                color: $color-principal;
             }
         }
         .quote-close {
-            display: flex;
-            justify-content: end;
-            align-items: center;
+            @include flex (flex, end, center);
             padding: 5px;
             width: 100%;
             img {
@@ -75,9 +69,7 @@ main {
         }
     }
     .left-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
         flex-direction: row;
         padding: 10px;
         img {
@@ -93,21 +85,19 @@ main {
             font-size: 18px;
             a {
                 text-decoration: underline;
-                color: #9A2A18;
+                color: $color-enfasis;
                 &:visited {
-                    color: #73877b;
+                    color: $color-links-visitados;
                 }
                 &:hover {
                     text-decoration-style: dashed;
-                    color: #73877b;
+                    color: $color-links-visitados;
                 }
             }
         }
     }
     .right-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
         flex-direction: row;
         padding: 10px;
         p {

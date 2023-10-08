@@ -46,12 +46,12 @@ h3 {
 }
 
 .dropdown-item.active {
-    background-color: #F7F4F3;
+    background-color: #f7f4f3d1;
     color: #190933;
 }
 
 .dropdown-menu {
-    --bs-dropdown-link-active-bg: #F7F4F3;
+    --bs-dropdown-link-active-bg: $color-claro;
     --bs-dropdown-link-active-color: #190933;
 }
 

@@ -1,21 +1,19 @@
 main {
     // Paginas de Contenido - Shopping Outings History
     font-family: 'Rokkitt', serif;
-    background-color: #F7F4F3;
+    background-color: $color-claro;
     .hero {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
         height: 300px;
-        display: flex;
+        @extend %flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
             h1 {
                 font-size: 100px;
-                color: #9A2A18;
-                text-shadow: 2px 2px #f7f4f3cf;
+                color: $color-enfasis;
+                text-shadow: 2px 2px nth($color-claro-transparencias,1);
             }
     }
     /* Hero Section - Itinerary */
@@ -25,14 +23,10 @@ main {
     .quote {
         text-align: center;
         padding: 15px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        @extend %flex-evenly;
         flex-direction: column;
         .quote-open {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
+            @include flex (flex, space-between, start);
             padding: 5px;
             width: 100%;
             img {
@@ -40,10 +34,11 @@ main {
             }
         }
         div {
-            h3 {
+            h2 {
                 text-align: justify;
                 font-size: 25px;
                 font-style: italic;
+                font-weight: 200;
             }
             p {
                 font-size: 18px;
@@ -52,9 +47,7 @@ main {
             }
         }
         .quote-close {
-            display: flex;
-            justify-content: end;
-            align-items: center;
+            @include flex (flex, end, center);
             padding: 5px;
             width: 100%;
             img {
@@ -77,38 +70,32 @@ main {
             h2 {
                 text-align: center;
                 font-size: 20px;
-                border: #190933;
+                border: $color-fondo-alternativo;
                 border-width: 1px;
                 border-style: solid;
                 height: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @extend %flex-center;
                 padding: 4px;
-                color: #9A2A18;
+                color: $color-enfasis;
             }
             h3 {
                 text-align: center;
                 font-size: 15px;
-                border: #190933;
+                border: $color-fondo-alternativo;
                 border-width: 1px;
                 border-style: solid;
                 height: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @extend %flex-center;
                 padding: 2px;
             }
             p {
                 text-align: center;
                 font-size: 12px;
-                border: #190933;
+                border: $color-fondo-alternativo;
                 border-width: 1px;
                 border-style: solid;
                 height: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @extend %flex-center;
                 padding: 2px;
             }
         }

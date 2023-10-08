@@ -1,1 +1,36 @@
-// Variables, Mixins, Listas, etc
+// Variables - Para la paleta de colores
+$color-claro: #F7F4F3;
+$color-principal: #003049;
+$color-enfasis: #9A2A18;
+$color-links-visitados: #73877b;
+$color-fondo-alternativo: #190933;
+
+// Lista - Para manejar distintos niveles de transparencia en sombreados y backgrounds
+$color-claro-transparencias: #f7f4f3dd, #f7f4f3b4, #f7f4f37b, #f7f4f348;
+
+// Extends - Para los display Flex
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+%flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Mixins - Para los contenedores que usan flex distinto a lo que tengo declarado en los Extend
+
+@mixin flex ($display, $justify, $align){
+    display:$display;
+    justify-content:$justify;
+    align-items:$align;
+}

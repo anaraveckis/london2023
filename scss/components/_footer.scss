@@ -1,10 +1,8 @@
 footer {
-    background-color: #190933;
+    background-color: $color-fondo-alternativo;
     text-align: center;
-    color: #F7F4F3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: $color-claro;
+    @extend %flex-between;
     height: 200px;
     .map {
         padding-left: 15px;
@@ -21,7 +19,7 @@ footer {
                 font-size: 30px;
                 display: inline;
                 padding: 5px;
-                color: #F7F4F3;
+                color: $color-claro;
                 }
             }
     }
@@ -31,9 +29,10 @@ footer {
         bottom: 200px;
         a {
             .bi-whatsapp {
-                font-size: 35px;
-                color: #73877b;
-                text-shadow: 1px 1px #f7f4f3d9;
+                font-size: 40px;
+                color: $color-principal;
+                text-shadow: 1px 1px nth($color-claro-transparencias, 1);
+                font-weight: bold;
             }
         }
     }
