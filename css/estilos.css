@@ -117,18 +117,24 @@ main {
       justify-content: space-around;
       align-items: center;
       flex-direction: column;
-      flex-wrap: wrap; }
+      flex-wrap: nowrap; }
       main .previews .preview-card img {
-        width: 100%;
+        width: 90%;
         height: auto;
-        padding-top: 10px;
-        object-fit: cover; }
+        object-fit: contain;
+        margin: 20px;
+        transition: 1s; }
+        main .previews .preview-card img:hover {
+          transform: scale(1.03);
+          box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.48);
+          -webkit-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.48);
+          -moz-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.48); }
       main .previews .preview-card p {
         width: 100%;
         font-size: 17px;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         height: 110px;
         text-align: center; }
       main .previews .preview-card .button {
@@ -181,6 +187,10 @@ main {
     text-align: center;
     padding: 15px;
     flex-direction: column; }
+    main .quote:hover {
+      transform: scale(1.3);
+      transition-duration: 2s;
+      transition-timing-function: ease; }
     main .quote .quote-open {
       display: flex;
       justify-content: space-between;
@@ -214,7 +224,13 @@ main {
       width: 50%;
       object-fit: cover;
       display: inline;
-      height: auto; }
+      height: 100%;
+      transition: 1s; }
+      main .left-section img:hover {
+        transform: scale(1.02);
+        box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.48);
+        -webkit-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.48); }
     main .left-section p {
       width: 40%;
       padding: 15px;
@@ -236,10 +252,24 @@ main {
       padding: 15px;
       text-align: left;
       font-size: 18px; }
+      main .right-section p a {
+        text-decoration: underline;
+        color: #9A2A18; }
+        main .right-section p a:visited {
+          color: #73877b; }
+        main .right-section p a:hover {
+          text-decoration-style: dashed;
+          color: #73877b; }
     main .right-section img {
       width: 50%;
       display: inline;
-      object-fit: cover; }
+      object-fit: cover;
+      transition: 1s; }
+      main .right-section img:hover {
+        transform: scale(1.02);
+        box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.48);
+        -webkit-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.48); }
 
 main {
   font-family: 'Rokkitt', serif;
@@ -261,6 +291,10 @@ main {
   main .quote {
     text-align: center;
     padding: 15px; }
+    main .quote:hover {
+      transform: scale(1.3);
+      transition-duration: 2s;
+      transition-timing-function: ease; }
     main .quote .quote-open {
       display: flex;
       justify-content: space-between;
@@ -310,7 +344,12 @@ main {
     background-image: url(../img/gallery-hero.jpg); }
   main .quote {
     text-align: center;
-    padding: 15px; }
+    padding: 15px;
+    transition: 2s; }
+    main .quote:hover {
+      transform: scale(1.3);
+      transition-duration: 2s;
+      transition-timing-function: ease; }
     main .quote .quote-open {
       display: flex;
       justify-content: space-between;
@@ -354,21 +393,33 @@ main {
     padding: 10px; }
     main .galeria .grid-galeria .galeria-item {
       position: relative;
-      height: 100%; }
+      height: 100%;
+      transition-duration: 1s; }
+      main .galeria .grid-galeria .galeria-item:hover {
+        transform: scale(1.02); }
       main .galeria .grid-galeria .galeria-item img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 2%;
-        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        border-radius: 20px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        transition: 1s; }
+        main .galeria .grid-galeria .galeria-item img:hover {
+          border-top-right-radius: 25px;
+          border-top-left-radius: 25px; }
       main .galeria .grid-galeria .galeria-item h3 {
         position: absolute;
         bottom: 0;
         color: #F7F4F3;
-        background-color: #19093393;
+        background-color: #19093380;
         width: 100%;
         padding: 5px;
-        font-weight: 200; }
+        font-weight: 200;
+        transition: 1s;
+        border-radius: 20px; }
+        main .galeria .grid-galeria .galeria-item h3:hover {
+          border-top-right-radius: 25px;
+          border-top-left-radius: 25px; }
     main .galeria .grid-galeria .galeria-03 {
       grid-row: span 2; }
     main .galeria .grid-galeria .galeria-05 {
@@ -398,6 +449,10 @@ main {
     text-align: center;
     padding: 15px;
     flex-direction: column; }
+    main .quote:hover {
+      transform: scale(1.3);
+      transition-duration: 2s;
+      transition-timing-function: ease; }
     main .quote .quote-open {
       display: flex;
       justify-content: space-between;
@@ -481,12 +536,17 @@ footer {
   footer .message-icon {
     position: fixed;
     right: 20px;
-    bottom: 200px; }
+    bottom: 200px;
+    transition: 0.5s; }
+    footer .message-icon:hover {
+      transform: translateY(3px); }
     footer .message-icon a .bi-whatsapp {
       font-size: 40px;
       color: #003049;
-      text-shadow: 1px 1px #f7f4f3dd;
-      font-weight: bold; }
+      text-shadow: 1px 3px 8px rgba(0, 0, 0, 0.32);
+      transition: 0.5s; }
+      footer .message-icon a .bi-whatsapp:hover {
+        color: #006400; }
 
 @media screen and (max-width: 1020px) {
   footer .message-icon {

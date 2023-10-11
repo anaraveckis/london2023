@@ -50,19 +50,26 @@ main {
         .preview-card {
             @include flex (flex, space-around, center);
             flex-direction: column;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             img {
-                width: 100%;
+                width: 90%;
                 height: auto;
-                padding-top: 10px;
-                object-fit: cover;
+                object-fit: contain;
+                margin: 20px;
+                transition: 1s;
+                &:hover {
+                    transform: scale(1.03);
+                    box-shadow: 6px 6px 7px 0px rgba(0,0,0,0.48);
+                    -webkit-box-shadow: 6px 6px 7px 0px rgba(0,0,0,0.48);
+                    -moz-box-shadow: 6px 6px 7px 0px rgba(0,0,0,0.48);
+                }
             }
             p {
                 width: 100%;
                 font-size: 17px;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 height: 110px;
                 text-align: center;
             }

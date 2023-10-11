@@ -27,12 +27,19 @@ footer {
         position: fixed;
         right: 20px;
         bottom: 200px;
+        transition: 0.5s;
+        &:hover {
+            transform: translateY(3px);
+        }
         a {
             .bi-whatsapp {
                 font-size: 40px;
                 color: $color-principal;
-                text-shadow: 1px 1px nth($color-claro-transparencias, 1);
-                font-weight: bold;
+                text-shadow: 1px 3px 8px rgba(0,0,0,0.32);
+                transition: 0.5s;
+                &:hover {
+                    color: #006400;
+                }
             }
         }
     }
