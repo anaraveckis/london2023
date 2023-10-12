@@ -135,7 +135,7 @@ main {
         padding-top: 10px;
         padding-bottom: 10px;
         margin-bottom: 10px;
-        height: 110px;
+        height: 100%;
         text-align: center; }
       main .previews .preview-card .button {
         background-color: #003049;
@@ -590,6 +590,18 @@ footer {
       padding: 0px; }
     main .itinerary-titles .single-day p {
       font-size: 16px; } }
+
+@media screen and (max-width: 790px) {
+  main .previews {
+    gap: 15px; }
+    main .previews .preview-card img {
+      padding-top: 5px; }
+    main .previews .preview-card p {
+      font-size: 15px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      height: 100px; } }
 
 @media screen and (max-width: 690px) {
   main .hero div h1 {

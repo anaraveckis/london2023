@@ -90,6 +90,28 @@
     }
 }
 
+@media screen and (max-width: 790px) {
+
+    main {
+        .previews {
+            gap: 15px;
+            .preview-card {
+                img {
+                    padding-top: 5px;
+                }
+                p {
+                    font-size: 15px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    margin-bottom: 15px;
+                    height: 100px;
+                }
+            }
+        }
+    } 
+}
+
+
 @media screen and (max-width: 690px) {
 
     main {
