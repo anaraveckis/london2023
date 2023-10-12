@@ -33,6 +33,7 @@ main {
     background-image: url(../img/shopping-hero.jpg);
     }
     .quote {
+        /* Banner de Quote, debajo de la Hero Section de cada pagina */
         text-align: center;
         padding: 15px;
         @extend %flex-evenly;
@@ -69,6 +70,7 @@ main {
         }
     }
     .left-section {
+        /* Imagen a la izquierda, texto a la derecha */
         @extend %flex-center;
         flex-direction: row;
         padding: 10px;
@@ -91,6 +93,7 @@ main {
             text-align: right;
             font-size: 18px;
             a {
+                /* Clases y Pseudoclases para los links en los parrafos de las paginas de contenido */
                 text-decoration: underline;
                 color: $color-enfasis;
                 &:visited {
@@ -104,6 +107,7 @@ main {
         }
     }
     .right-section {
+        /* Imagen a la derecha, texto a la izquierda */
         @extend %flex-center;
         flex-direction: row;
         padding: 10px;
@@ -112,7 +116,7 @@ main {
             padding: 15px;
             text-align: left;
             font-size: 18px;
-            a {
+            a {/* Clases y Pseudoclases para los links en los parrafos de las paginas de contenido */
                 text-decoration: underline;
                 color: $color-enfasis;
                 &:visited {

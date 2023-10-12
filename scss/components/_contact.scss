@@ -21,6 +21,7 @@ main {
     background-image: url(../img/contact-hero.jpg);
     }
     .quote {
+        /* Banner de Quote, debajo de la Hero Section de cada pagina */
         text-align: center;
         padding: 15px;
         @extend %flex-evenly;

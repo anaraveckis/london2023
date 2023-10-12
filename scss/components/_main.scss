@@ -3,6 +3,7 @@ main {
     font-family: 'Rokkitt', serif;
     background-color: $color-claro;
     .hero {
+        /* Hero Section - Se aplica al Hero de todas las paginas */
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -18,6 +19,7 @@ main {
             }
         }
         .counter {
+            /* Section Contador - Index */
             @extend %flex-center;
             background-color: nth($color-claro-transparencias, 2);
             padding: 10px;
@@ -31,6 +33,7 @@ main {
     background-image: url(../img/main-hero.jpg);
         }
     .welcome {
+        /* Section Welcome - Mensaje de Bienvenida al sitio */
         text-align:center;
         h2 {
             color: $color-enfasis;
@@ -39,6 +42,7 @@ main {
         }
     }
     .previews {
+        /* Section Cards con Previews para History, Outings y Shopping */
         background-color: $color-claro;
         color: $color-fondo-alternativo;
         display: grid;
@@ -74,6 +78,7 @@ main {
                 text-align: center;
             }
             .button {
+                /* Clases y Pseudoclases para Botones de las Previews */
                 background-color: $color-principal;
                 padding: 5px 20px 5px 20px;
                 text-decoration: none;

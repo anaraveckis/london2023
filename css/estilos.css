@@ -63,6 +63,7 @@ footer {
   align-items: center; }
 
 header {
+  /*!--------------HEADER--------------*/
   position: sticky;
   top: 0;
   z-index: 1; }
@@ -80,6 +81,7 @@ main {
   background-color: #F7F4F3;
   /* Hero Section - Index */ }
   main .hero {
+    /* Hero Section - Se aplica al Hero de todas las paginas */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -91,6 +93,7 @@ main {
       color: #9A2A18;
       text-shadow: 2px 2px #f7f4f3dd; }
     main .hero .counter {
+      /* Section Contador - Index */
       background-color: #f7f4f3b4;
       padding: 10px; }
     main .hero .counter-small {
@@ -98,12 +101,14 @@ main {
   main .hero-main {
     background-image: url(../img/main-hero.jpg); }
   main .welcome {
+    /* Section Welcome - Mensaje de Bienvenida al sitio */
     text-align: center; }
     main .welcome h2 {
       color: #9A2A18;
       font-size: 80px;
       text-align: center; }
   main .previews {
+    /* Section Cards con Previews para History, Outings y Shopping */
     background-color: #F7F4F3;
     color: #190933;
     display: grid;
@@ -138,6 +143,7 @@ main {
         height: 100%;
         text-align: center; }
       main .previews .preview-card .button {
+        /* Clases y Pseudoclases para Botones de las Previews */
         background-color: #003049;
         padding: 5px 20px 5px 20px;
         text-decoration: none;
@@ -184,6 +190,7 @@ main {
   main .hero-shopping {
     background-image: url(../img/shopping-hero.jpg); }
   main .quote {
+    /* Banner de Quote, debajo de la Hero Section de cada pagina */
     text-align: center;
     padding: 15px;
     flex-direction: column; }
@@ -214,6 +221,7 @@ main {
       main .quote .quote-close img {
         width: 50px; }
   main .left-section {
+    /* Imagen a la izquierda, texto a la derecha */
     flex-direction: row;
     padding: 10px; }
     main .left-section img {
@@ -233,6 +241,7 @@ main {
       text-align: right;
       font-size: 18px; }
       main .left-section p a {
+        /* Clases y Pseudoclases para los links en los parrafos de las paginas de contenido */
         text-decoration: underline;
         color: #9A2A18; }
         main .left-section p a:visited {
@@ -241,6 +250,7 @@ main {
           text-decoration-style: dashed;
           color: #73877b; }
   main .right-section {
+    /* Imagen a la derecha, texto a la izquierda */
     flex-direction: row;
     padding: 10px; }
     main .right-section p {
@@ -249,6 +259,7 @@ main {
       text-align: left;
       font-size: 18px; }
       main .right-section p a {
+        /* Clases y Pseudoclases para los links en los parrafos de las paginas de contenido */
         text-decoration: underline;
         color: #9A2A18; }
         main .right-section p a:visited {
@@ -285,6 +296,7 @@ main {
   main .hero-contact {
     background-image: url(../img/contact-hero.jpg); }
   main .quote {
+    /* Banner de Quote, debajo de la Hero Section de cada pagina */
     text-align: center;
     padding: 15px; }
     main .quote .quote-open {
@@ -335,6 +347,7 @@ main {
   main .hero-gallery {
     background-image: url(../img/gallery-hero.jpg); }
   main .quote {
+    /* Banner de Quote, debajo de la Hero Section de cada pagina */
     text-align: center;
     padding: 15px; }
     main .quote .quote-open {
@@ -362,58 +375,60 @@ main {
       width: 100%; }
       main .quote .quote-close img {
         width: 50px; }
-  main .galeria h2 {
-    display: block;
-    font-weight: bold;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-bottom: 0px;
-    color: #9A2A18;
-    font-size: 80px;
-    text-align: center; }
-  main .galeria .grid-galeria {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
-    gap: 15px;
-    padding: 10px; }
-    main .galeria .grid-galeria .galeria-item {
-      position: relative;
-      height: 100%;
-      transition-duration: 1s; }
-      main .galeria .grid-galeria .galeria-item:hover {
-        transform: scale(1.02); }
-      main .galeria .grid-galeria .galeria-item img {
-        width: 100%;
+  main .galeria {
+    /* Pagina "From Past Trips" (Galeria de Imagenes) */ }
+    main .galeria h2 {
+      display: block;
+      font-weight: bold;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      margin-bottom: 0px;
+      color: #9A2A18;
+      font-size: 80px;
+      text-align: center; }
+    main .galeria .grid-galeria {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 250px;
+      gap: 15px;
+      padding: 10px; }
+      main .galeria .grid-galeria .galeria-item {
+        position: relative;
         height: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-        transition: 1s; }
-        main .galeria .grid-galeria .galeria-item img:hover {
-          border-top-right-radius: 25px;
-          border-top-left-radius: 25px; }
-      main .galeria .grid-galeria .galeria-item h3 {
-        position: absolute;
-        bottom: 0;
-        color: #F7F4F3;
-        background-color: #19093380;
-        width: 100%;
-        padding: 5px;
-        font-weight: 200;
-        transition: 1s;
-        border-radius: 20px; }
-        main .galeria .grid-galeria .galeria-item h3:hover {
-          border-top-right-radius: 25px;
-          border-top-left-radius: 25px; }
-    main .galeria .grid-galeria .galeria-03 {
-      grid-row: span 2; }
-    main .galeria .grid-galeria .galeria-05 {
-      grid-column: span 2;
-      grid-row: span 2; }
-    main .galeria .grid-galeria .galeria-10 {
-      grid-column: span 2; }
+        transition-duration: 1s; }
+        main .galeria .grid-galeria .galeria-item:hover {
+          transform: scale(1.02); }
+        main .galeria .grid-galeria .galeria-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+          transition: 1s; }
+          main .galeria .grid-galeria .galeria-item img:hover {
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px; }
+        main .galeria .grid-galeria .galeria-item h3 {
+          position: absolute;
+          bottom: 0;
+          color: #F7F4F3;
+          background-color: #19093380;
+          width: 100%;
+          padding: 5px;
+          font-weight: 200;
+          transition: 1s;
+          border-radius: 20px; }
+          main .galeria .grid-galeria .galeria-item h3:hover {
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px; }
+      main .galeria .grid-galeria .galeria-03 {
+        grid-row: span 2; }
+      main .galeria .grid-galeria .galeria-05 {
+        grid-column: span 2;
+        grid-row: span 2; }
+      main .galeria .grid-galeria .galeria-10 {
+        grid-column: span 2; }
 
 main {
   font-family: 'Rokkitt', serif;
@@ -433,6 +448,7 @@ main {
   main .hero-itinerary {
     background-image: url(../img/itinerary-hero.jpg); }
   main .quote {
+    /* Banner de Quote, debajo de la Hero Section de cada pagina */
     text-align: center;
     padding: 15px;
     flex-direction: column; }
@@ -462,6 +478,7 @@ main {
       main .quote .quote-close img {
         width: 50px; }
   main .itinerary-titles {
+    /* Para la pagina Itinerary (Calendario de Actividades) */
     width: 100%;
     padding-bottom: 15px;
     display: grid;
@@ -505,18 +522,22 @@ footer {
   color: #F7F4F3;
   height: 200px; }
   footer .map {
+    /* Mapa de Google Maps */
     padding-left: 15px;
     width: 300px;
     height: 150px; }
   footer div p {
+    /* Texto de Copyright */
     padding: 15px;
     font-size: 14px; }
   footer div a i {
+    /* Clase para iconos de Bootstrap - Redes Sociales */
     font-size: 30px;
     display: inline;
     padding: 5px;
     color: #F7F4F3; }
   footer .message-icon {
+    /* Icono de WhatsApp */
     position: fixed;
     right: 20px;
     bottom: 200px;

@@ -5,17 +5,20 @@ footer {
     @extend %flex-between;
     height: 200px;
     .map {
+        /* Mapa de Google Maps */
         padding-left: 15px;
         width: 300px;
         height: 150px;
     }
     div {
         p {
+            /* Texto de Copyright */
             padding: 15px;
             font-size: 14px;
         }
         a {
             i {
+                /* Clase para iconos de Bootstrap - Redes Sociales */
                 font-size: 30px;
                 display: inline;
                 padding: 5px;
@@ -24,6 +27,7 @@ footer {
             }
     }
     .message-icon {
+        /* Icono de WhatsApp */
         position: fixed;
         right: 20px;
         bottom: 200px;

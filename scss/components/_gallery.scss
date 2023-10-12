@@ -21,6 +21,7 @@ main {
     background-image: url(../img/gallery-hero.jpg);
     }
     .quote {
+        /* Banner de Quote, debajo de la Hero Section de cada pagina */
         text-align: center;
         padding: 15px;
         @extend %flex-evenly;
@@ -55,6 +56,7 @@ main {
         }
     }
     .galeria {
+        /* Pagina "From Past Trips" (Galeria de Imagenes) */
         h2 {
             display: block;
             font-weight: bold;
