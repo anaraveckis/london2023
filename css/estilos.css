@@ -593,7 +593,33 @@ footer {
       font-size: 18px;
       padding: 0px; }
     main .itinerary-titles .single-day p {
-      font-size: 16px; } }
+      font-size: 16px; }
+  main section .left-section {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px; }
+    main section .left-section img {
+      width: 100%; }
+    main section .left-section p {
+      width: 100%;
+      padding: 15px;
+      text-align: justify;
+      font-size: 18px; }
+  main section .right-section {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px; }
+    main section .right-section p {
+      order: 2;
+      width: 100%;
+      padding: 15px;
+      text-align: justify;
+      font-size: 18px; }
+    main section .right-section img {
+      width: 100%;
+      order: 1; } }
 
 @media screen and (max-width: 790px) {
   main .previews {
@@ -676,32 +702,6 @@ footer {
         object-fit: fill; }
       main .previews .preview-card p {
         display: none; }
-  main section .left-section {
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    padding: 15px; }
-    main section .left-section img {
-      width: 100%; }
-    main section .left-section p {
-      width: 100%;
-      padding: 15px;
-      text-align: justify;
-      font-size: 18px; }
-  main section .right-section {
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    padding: 15px; }
-    main section .right-section p {
-      order: 2;
-      width: 100%;
-      padding: 15px;
-      text-align: justify;
-      font-size: 18px; }
-    main section .right-section img {
-      width: 100%;
-      order: 1; }
   main section .formulario {
     padding: 10px 20px 10px 20px; } }
 
